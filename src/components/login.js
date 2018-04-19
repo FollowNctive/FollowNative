@@ -25,8 +25,8 @@ class Login extends Component{
           sm: { span: 4 },
         },
         wrapperCol: {
-          xs: { span: 24 },
-          sm: { span: 20 },
+          xs: { span: 20},
+          sm: { span: 18 },
         }
       }
       return(
@@ -34,9 +34,9 @@ class Login extends Component{
            
               <Form>
                 <FormItem className="form-title">
-                  <h1>管理员登录</h1>
+                  <h1>-----管理员登录-----</h1>
                 </FormItem>
-                <FormItem 
+                <FormItem  
                 {...FormItemLayout}                
                 label="用户名:">
                 {getFieldDecorator('userName', {
@@ -57,12 +57,11 @@ class Login extends Component{
               <FormItem
           wrapperCol={{
             xs: { span: 22, offset: 2 },
-            sm: { span: 20, offset: 4 },
+            sm: { span: 20, offset: 2 },
           }}
         >
-          <Button type="primary" htmlType="submit" className="login-form">Submit</Button>
-        </FormItem>
-           
+          <Button type="primary" htmlType="submit" className="login-form">登录</Button>
+        </FormItem>   
            
         </div>
       )

@@ -4,20 +4,22 @@
   "description": "",
   "main": "root.js",
   "scripts": {
-    "start": "set WEBPACK_DEV=dev && webpack-dev-server --inline --port 8088"
+     
+    "dev": "webpack-dev-server --hot --inline"
   },
   "author": "jiang",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
-    "css-loader": "^0.28.11",
+    "babel-plugin-react-html-attrs": "^2.0.0",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.28.11",
+    "open-browser-webpack-plugin": "^0.0.5",
     "style-loader": "^0.20.3",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^1.15.0",
-    "babel-plugin-react-html-attrs": "^2.0.0"
+    "webpack-dev-server": "^1.15.0"
   },
   "dependencies": {
     "antd": "^3.4.1",
